@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="player">
+            <video src="./assets/videos/lofi.mp4" poster="./assets/images/poster.jpg" id="video" width="450" muted></video>            
+            <div class="player-overlay">
+                <div class="player-title"><h3>Reproductor de Música</h3></div>   
+                <div class="player-action">
+                    <button class="button" id="backward" aria-label="Retroce 10s" title="Retrocede 10s"></button> <!-- // Atras-->
+                    <button class="button" id="play" aria-label="Inicia Video" title="Reproducir"></button> <!-- // Play-->
+                    <button class="button" id="pause" hidden aria-label="Detiene Video" title="Pausar"></button> <!-- // Pause-->
+                    <button class="button" id="forward" aria-label="Avanza 10s" title="Avanzar 10s"></button> <!-- // Next-->
+                </div>                
+                <div class="player-range">
+                    <input type="range" id="range" min="0" value="0" step="1">
+                </div>
+            </div>         
+        </div>
+    </div>
+
+    <script src="assets/js/jobs.js"></script>
+</body>
+</html>
