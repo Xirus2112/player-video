@@ -59,7 +59,7 @@ body{
     position: absolute;
     inset: 0;
     opacity: 0;
-    transition: .3s opacity;
+    transition: .4s opacity;
 }
 
 .player:hover .player-overlay{
